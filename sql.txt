@@ -1,0 +1,12 @@
+CREATE DATABASE harjoitus9 ;
+USE harjoitus9;
+
+CREATE TABLE opiskelija (idOpiskelija INT PRIMARY KEY,
+Etunimi VARCHAR(45),
+Sukunimi VARCHAR(45)) ;
+
+INSERT INTO opiskelija VALUES ('1', 'Seppo', 'Mäkinen');
+INSERT INTO opiskelija VALUES ('2', 'Teppo', 'Tulppu');
+INSERT INTO opiskelija VALUES ('3', 'Aku', 'Ankka');
+
+GRANT ALL ON harjoitus9.* TO 'webuser' @'localhost' IDENTIFIED BY 'webpass';
